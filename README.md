@@ -2,7 +2,16 @@
 
 An investigation of how likely it is that googling for the name of your congressional representative returns the name of an incorrect representative. 
 
-I've highlighted some more incorrect results in "More Incorrect SERP examples.pdf", but see the potential_mistakes CSV files for more. 
+I've highlighted some more incorrect results in "More Incorrect SERP examples.pdf", but see the potential_mistakes spreadsheets (in results) for more. 
+
+## Top line findings 
+What we consider a mistake: The name of a current member of congress who does not represent any part of the zip code (or the congressional district) appearing as the top result.  
+
+Two different datasets: by zipcode and by congressional district
+
+By zipcode: ~20% of zip code queries turned up the correct congressional representative’s name. Another ~10% turned up the wrong congressperson's name. 
+
+By congressional district: Sampled all California congressional districts (40 variations of queries). 53% turn up the congressperson's name in the top result. Another ~8% turn up the wrong congressperson’s name
 
 ## In this Repo:
 
@@ -12,7 +21,7 @@ Results labled 1_14 were collected January 14-15, 2020. Results labeled 3_9 were
 See the About the Data section for details about the data methods of collection.
 
 -  [Drive link to static copies of the SERP html pages](https://drive.google.com/drive/folders/16sepdh8zUGjF9fcJv67ej9ds8WifZyFw?usp=sharing)
-- `3_9_zipcode_potential_mistakes.csv`, `1_14_potential_mistakes.csv`: files containing then names of other congressional representatives that appear in the top result.
+- `3_9_zipcode_potential_mistakes.csv`, `1_14_potential_mistakes.xlsx`: files containing then names of other congressional representatives that appear in the top result.
 
 ### Code
 SERP collection code and analysis code (to be further cleaned up on a future date)
@@ -23,12 +32,12 @@ Previous research has established both query formulation  to be influential in d
 
 
 ### Query terms: 
-See the final 40 columns of `data/cong_queries` for the variations of queries used to search for representatives' names by congressional district. 
+See the final 40 columns of `data/cong_queries.xlsx` for the variations of queries used to search for representatives' names by congressional district. 
 
 For zip codes, I used 4 variations  for 1917 randomly sampled zipcodes (with the constraint that at least 2 zip codes must come from within 1 congressional district):
 - zip code + representative; zip code + rep; zipcode + congress; zipcode + congressperson
 
-The full set of zip code queries are in `data/zip_queries`
+The full set of zip code queries are in `data/zip_queries.xlsx`
 
 ### What counts as "incorrect"
 I define an incorrect result as one that lists a name that does not belong to the elected representative of that district in the top position of the SERP.

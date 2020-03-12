@@ -7,11 +7,12 @@ I've highlighted some more incorrect results in "More Incorrect SERP examples.pd
 ## Top line findings 
 What we consider a mistake: The name of a current member of congress who does not represent any part of the zip code (or the congressional district) appearing as the top result.  
 
-Two different datasets: by zipcode and by congressional district
+I collected different datasets (across multiple dates): by zipcode and by congressional district... only two dates (1/14 and 3/9 are currently uploaded)
 
 By zipcode: ~20% of zip code queries turned up the correct congressional representative’s name. Another ~10% turned up the wrong congressperson's name. 
 
 By congressional district: Sampled all California congressional districts (40 variations of queries). 53% turn up the congressperson's name in the top result. Another ~8% turn up the wrong congressperson’s name
+
 
 ## In this Repo:
 
@@ -21,7 +22,7 @@ Results labled 1_14 were collected January 14-15, 2020. Results labeled 3_9 were
 See the About the Data section for details about the data methods of collection.
 
 -  [Drive link to static copies of the SERP html pages](https://drive.google.com/drive/folders/16sepdh8zUGjF9fcJv67ej9ds8WifZyFw?usp=sharing)
-- `3_9_zipcode_potential_mistakes.csv`, `1_14_potential_mistakes.xlsx`: files containing then names of other congressional representatives that appear in the top result.
+- `results/3_9_zipcode_potential_mistakes.csv`, `results/1_14_potential_mistakes.xlsx`: files containing then names of other congressional representatives that appear in the top result.
 
 ### Code
 SERP collection code and analysis code (to be further cleaned up on a future date)

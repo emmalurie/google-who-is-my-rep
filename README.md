@@ -4,7 +4,7 @@ An investigation of how likely it is that googling for the name of your congress
 
 I've highlighted some more incorrect results in "More Incorrect SERP examples.pdf", but see the potential_mistakes spreadsheets (in results) for more. 
 
-## Top line findings 
+## Major Findings 
 What we consider a mistake: The name of a current member of congress who does not represent any part of the zip code (or the congressional district) appearing as the top result.  
 
 I collected different datasets (across multiple dates): by zipcode and by congressional district... only two dates (1/14 and 3/9 are currently uploaded)
